@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply px-20
+}
+
+.navbar{
+    @apply flex justify-between p-2
+}
+
+.nav-logo{
+    @apply py-2
+}
+
+.nav-list-section{
+    @apply pr-10
+}
+
+.nav-list{
+    @apply flex
+}
+
+.nav-link{
+    @apply uppercase text-sm mx-4 py-2 font-semibold hover:text-orange-400 cursor-pointer transition ease-out duration-200
+}
+
+.nav-btn{
+    @apply text-sm font-semibold ml-4 px-5 py-2 text-white bg-red-600 rounded-md cursor-pointer
+}
+
+/*SECTION 1*/
+.section-1{
+    @apply flex justify-between my-7
+}
+
+.section-1-text{
+    @apply w-1/3
+}
+
+.section-1-heading{
+    @apply text-4xl font-bold capitalize mb-5
+}
+
+.section-1-p{
+    @apply text-slate-500 mb-5
+}
+
+.section-1-btn-grp{
+    @apply flex
+}
+
+.section-1-btn-1{
+    @apply text-white font-semibold px-5 py-2 rounded-md bg-blue-700 shadow-lg
+}
+
+.section-1-btn-2{
+    @apply text-slate-600 font-semibold px-5 py-2 ml-3 rounded-md bg-slate-100 shadow-lg
+}
+
+/*SECTION 2*/
+.section-2{
+    @apply my-7
+}
+
+.features{
+    @apply w-1/3 mx-auto
+}
+
+.features-heading{
+    @apply text-center text-3xl font-bold
+}
+
+.features-text{
+    @apply text-center text-slate-600 mt-3
+}
+
+/*SECTION 3*/
+.section-3{
+    @apply my-7
+}
+
+
+
+.download-heading{
+    @apply w-1/3 mx-auto text-center text-3xl font-bold
+}
+
+.download-p{
+    @apply w-1/2 mx-auto text-center text-slate-600 mt-3
+}
+
+.download-cards-grp{
+    @apply w-9/12 mx-auto my-10 flex justify-between
+}
+
+.download-card{
+    @apply p-4 rounded-lg shadow-lg
+}
+
+.download-logo{
+    @apply mx-auto
+}
+
+.download-card-heading{
+    @apply text-center text-xl font-bold my-3
+}
+
+.download-card-text{
+    @apply text-center text-sm text-slate-500 mb-3
+}
+
+.lower-card{
+    @apply border-t border-dotted 
+}
+
+
+
+.download-btn{
+    @apply text-white font-semibold mt-5 px-4 py-2 bg-blue-700 rounded-md
+}

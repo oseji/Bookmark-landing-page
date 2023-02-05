@@ -92,8 +92,12 @@ body{
     @apply py-4 text-slate-600 text-sm hover:text-orange-600 font-bold cursor-pointer transition ease-out duration-200
 }
 
-.first-feature{
-    @apply flex gap-20 w-9/12 mx-auto
+.feature-tabs{
+    @apply flex  overflow-x-scroll
+}
+
+.feature{
+    @apply flex gap-20 w-full mx-auto
 }
 
 .more-info-other{
@@ -170,8 +174,12 @@ body{
     @apply px-3 
 }
 
+.question-heading{
+    @apply hover:text-orange-600 transition ease-in duration-100
+}
+
 .question-heading-1{
-    @apply flex justify-between font-semibold text-lg border-b border-black cursor-pointer
+    @apply flex justify-between font-semibold text-lg border-b border-black cursor-pointer 
 }
 
 .question-heading-2{
@@ -187,7 +195,7 @@ body{
 }
 
 .question{
-    @apply py-4 hover:text-orange-600 transition ease-out duration-200
+    @apply py-4 
 }
 
 .arrow{
@@ -232,15 +240,15 @@ body{
 }
 
 .footer-email{
-    @apply flex gap-3 w-full mt-10 bg-yellow-200
+    @apply flex gap-3 w-full mt-10 
 }
 
 .input-email{
-    @apply rounded-md w-64 h-full
+    @apply rounded-md w-64 h-auto p-2
 }
 
 .email-error{
-    @apply w-64 text-white text-sm bg-red-700 px-2 py-1
+    @apply w-64 text-white text-sm bg-red-700 mt-1 px-2 py-1 rounded-md 
 }
 
 .btn-contact-us{
@@ -256,7 +264,7 @@ body{
 }
 
 .footer-logo{
-    @apply mr-10
+    @apply mr-10 
 }
 
 .footer-link{
@@ -268,5 +276,5 @@ body{
 }
 
 .second-group-icon{
-    @apply mx-2
+    @apply mx-2 cursor-pointer 
 }

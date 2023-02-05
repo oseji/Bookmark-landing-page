@@ -27,16 +27,16 @@ body{
 }
 
 .nav-btn{
-    @apply text-sm font-semibold ml-4 px-5 py-2 text-white bg-red-600 rounded-md cursor-pointer
+    @apply text-sm font-semibold ml-4 px-5 py-2 text-white bg-red-600 rounded-md cursor-pointer hover:text-red-600 hover:bg-white hover:outline hover:outline-red-600 transition ease-in duration-100
 }
 
 /*SECTION 1*/
 .section-1{
-    @apply flex justify-between my-7
+    @apply flex justify-between mb-14 mt-20
 }
 
 .section-1-text{
-    @apply w-1/3
+    @apply w-1/3 h-64 my-auto
 }
 
 .section-1-heading{
@@ -52,16 +52,20 @@ body{
 }
 
 .section-1-btn-1{
-    @apply text-white font-semibold px-5 py-2 rounded-md bg-blue-700 shadow-lg
+    @apply text-white font-semibold px-5 py-2 rounded-md bg-blue-700 shadow-lg hover:text-blue-700 hover:bg-white hover:outline hover:outline-blue-700  transition ease-in duration-100 
 }
 
 .section-1-btn-2{
-    @apply text-slate-600 font-semibold px-5 py-2 ml-3 rounded-md bg-slate-100 shadow-lg
+    @apply text-slate-600 font-semibold px-5 py-2 ml-3 rounded-md bg-slate-100 shadow-lg  hover:bg-white hover:outline hover:outline-slate-600 transition ease-in duration-100 
+}
+
+.section-1-img{
+    @apply h-96
 }
 
 /*SECTION 2*/
 .section-2{
-    @apply my-7
+    @apply my-20
 }
 
 .features{
@@ -74,6 +78,26 @@ body{
 
 .features-text{
     @apply text-center text-slate-600 mt-3
+}
+
+.features-component{
+    @apply mt-10 p-1
+}
+
+.features-list{
+    @apply w-1/2 mx-auto mb-10 px-10 flex justify-between border-b border-slate-500 
+}
+
+.feature-list-li{
+    @apply py-4 text-slate-600 text-sm hover:text-orange-600 font-bold cursor-pointer transition ease-out duration-200
+}
+
+.first-feature{
+    @apply flex gap-20 w-9/12 mx-auto
+}
+
+.more-info-other{
+    @apply bg-blue-700 rounded-md text-white px-4 py-2 block  my-7
 }
 
 /*SECTION 3*/
@@ -94,7 +118,7 @@ body{
 }
 
 .download-card{
-    @apply py-5 px-4 rounded-lg shadow-xl bg-blue-300 h-72
+    @apply py-5 px-4 rounded-lg shadow-xl  h-72
 }
 
 .firefox{
@@ -122,20 +146,20 @@ body{
 }
 
 .download-btn{
-    @apply text-white font-semibold mt-5 px-4 py-2 bg-blue-700 rounded-md
+    @apply text-white font-semibold mt-5 px-4 py-2 bg-blue-700 rounded-md hover:text-blue-700 hover:bg-white hover:outline hover:outline-blue-700 transition ease-in duration-100 hover:transform hover:scale-105
 }
 
 /*SECTION 4*/
 .section-4{
-    @apply w-1/2 my-7 mx-auto bg-yellow-300
+    @apply w-1/2 my-24 mx-auto 
 }
 
 .section-4-heading{
-    @apply text-xl font-bold text-center
+    @apply text-2xl font-bold text-center mb-5
 }
 
 .section-4-text{
-    @apply w-9/12 mx-auto text-center text-slate-600
+    @apply w-9/12 mx-auto mb-5 text-center text-slate-600
 }
 
 .faq-grp{
@@ -143,19 +167,47 @@ body{
 }
 
 .accordion{
-    @apply p-3 bg-red-400
+    @apply px-3 
 }
 
-.question-heading{
+.question-heading-1{
     @apply flex justify-between font-semibold text-lg border-b border-black cursor-pointer
+}
+
+.question-heading-2{
+    @apply flex justify-between font-semibold text-lg border-b border-black cursor-pointer
+}
+
+.question-heading-3{
+    @apply flex justify-between font-semibold text-lg border-b border-black cursor-pointer
+}
+
+.question-heading-4{
+    @apply flex justify-between font-semibold text-lg border-b border-black cursor-pointer
+}
+
+.question{
+    @apply py-4 hover:text-orange-600 transition ease-out duration-200
 }
 
 .arrow{
     @apply h-3 my-auto
 }
 
-.faq-answer{
+.faq-answer-1{
     @apply mt-5
+}
+
+.faq-answer-2{
+    @apply mt-5 
+}
+
+.faq-answer-3{
+    @apply mt-5 
+}
+
+.faq-answer-4{
+    @apply mt-5 
 }
 
 .more-info{
@@ -175,8 +227,24 @@ body{
     @apply w-72 mx-auto mt-5 text-white text-center text-2xl font-semibold
 }
 
+.email-component{
+    @apply w-1/3 mx-auto
+}
+
 .footer-email{
-    @apply w-1/3 mx-auto mt-5 bg-yellow-200
+    @apply flex gap-3 w-full mt-10 bg-yellow-200
+}
+
+.input-email{
+    @apply rounded-md w-64 h-full
+}
+
+.email-error{
+    @apply w-64 text-white text-sm bg-red-700 px-2 py-1
+}
+
+.btn-contact-us{
+    @apply px-3 py-2 text-white text-sm bg-orange-600 rounded-md hover:text-orange-600 hover:bg-white hover:outline hover:outline-orange-600 transition ease-out duration-200
 }
 
 .footer-links{
@@ -188,11 +256,11 @@ body{
 }
 
 .footer-logo{
-    @apply mr-4
+    @apply mr-10
 }
 
 .footer-link{
-    @apply mx-4 text-white hover:text-orange-400 transition ease-out duration-200
+    @apply mx-4 mt-1 text-white text-sm hover:text-orange-400 transition ease-out duration-200
 }
 
 .second-group{

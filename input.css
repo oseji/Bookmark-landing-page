@@ -2,279 +2,279 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+/*body{
     @apply px-20
+}*/
+
+.navbar {
+  @apply flex justify-between py-4 px-20;
 }
 
-.navbar{
-    @apply flex justify-between p-2
+.nav-logo {
+  @apply py-2;
 }
 
-.nav-logo{
-    @apply py-2
+.nav-list-section {
+  @apply pr-10;
 }
 
-.nav-list-section{
-    @apply pr-10
+.nav-list {
+  @apply flex;
 }
 
-.nav-list{
-    @apply flex
+.nav-link {
+  @apply uppercase text-sm mx-4 py-2 font-semibold hover:text-orange-400 cursor-pointer transition ease-out duration-200;
 }
 
-.nav-link{
-    @apply uppercase text-sm mx-4 py-2 font-semibold hover:text-orange-400 cursor-pointer transition ease-out duration-200
-}
-
-.nav-btn{
-    @apply text-sm font-semibold ml-4 px-5 py-2 text-white bg-red-600 rounded-md cursor-pointer hover:text-red-600 hover:bg-white hover:outline hover:outline-red-600 transition ease-in duration-100
+.nav-btn {
+  @apply text-sm font-semibold ml-4 px-5 py-2 text-white bg-red-600 rounded-md cursor-pointer hover:text-red-600 hover:bg-white hover:outline hover:outline-red-600 transition ease-in duration-100;
 }
 
 /*SECTION 1*/
-.section-1{
-    @apply flex justify-between mb-14 mt-20
+.section-1 {
+  @apply flex justify-between my-20 px-20;
 }
 
-.section-1-text{
-    @apply w-1/3 h-64 my-auto
+.section-1-text {
+  @apply w-1/3 h-64 my-auto;
 }
 
-.section-1-heading{
-    @apply text-4xl font-bold capitalize mb-5
+.section-1-heading {
+  @apply text-4xl font-bold capitalize mb-5;
 }
 
-.section-1-p{
-    @apply text-slate-500 mb-5
+.section-1-p {
+  @apply text-slate-500 mb-5;
 }
 
-.section-1-btn-grp{
-    @apply flex
+.section-1-btn-grp {
+  @apply flex gap-5;
 }
 
-.section-1-btn-1{
-    @apply text-white font-semibold px-5 py-2 rounded-md bg-blue-700 shadow-lg hover:text-blue-700 hover:bg-white hover:outline hover:outline-blue-700  transition ease-in duration-100 
+.section-1-btn-1 {
+  @apply text-white font-semibold px-5 py-2 rounded-md bg-blue-700 shadow-lg hover:text-blue-700 hover:bg-white hover:outline hover:outline-blue-700  transition ease-in duration-100;
 }
 
-.section-1-btn-2{
-    @apply text-slate-600 font-semibold px-5 py-2 ml-3 rounded-md bg-slate-100 shadow-lg  hover:bg-white hover:outline hover:outline-slate-600 transition ease-in duration-100 
+.section-1-btn-2 {
+  @apply text-slate-600 font-semibold px-5 py-2  rounded-md bg-slate-100 shadow-lg  hover:bg-white hover:outline hover:outline-slate-600 transition ease-in duration-100;
 }
 
-.section-1-img{
-    @apply h-96
+.section-1-img {
+  @apply h-96;
 }
 
 /*SECTION 2*/
-.section-2{
-    @apply my-20
+.section-2 {
+  @apply my-20;
 }
 
-.features{
-    @apply w-1/3 mx-auto
+.features {
+  @apply w-1/3 mx-auto;
 }
 
-.features-heading{
-    @apply text-center text-3xl font-bold
+.features-heading {
+  @apply text-center text-3xl font-bold;
 }
 
-.features-text{
-    @apply text-center text-slate-600 mt-3
+.features-text {
+  @apply text-center text-slate-600 mt-3;
 }
 
-.features-component{
-    @apply mt-10 p-1
+.features-component {
+  @apply mt-10 p-1;
 }
 
-.features-list{
-    @apply w-1/2 mx-auto mb-10 px-10 flex justify-between border-b border-slate-500 
+.features-list {
+  @apply w-1/2 mx-auto mb-10 px-10 flex justify-between border-b border-slate-500;
 }
 
-.feature-list-li{
-    @apply py-4 text-slate-600 text-sm hover:text-orange-600 font-bold cursor-pointer transition ease-out duration-200
+.feature-list-li {
+  @apply py-4 text-slate-600 text-sm hover:text-orange-600 font-bold cursor-pointer transition ease-out duration-200;
 }
 
-.feature-tabs{
-    @apply flex  overflow-x-scroll
+.feature-tabs {
+  @apply flex   px-40;
 }
 
-.feature{
-    @apply flex gap-20 w-full mx-auto
+.feature {
+  @apply flex gap-20 w-full mx-auto;
 }
 
-.more-info-other{
-    @apply bg-blue-700 rounded-md text-white px-4 py-2 block  my-7
+.more-info-other {
+  @apply bg-blue-700 rounded-md text-white px-4 py-2 block  my-7;
 }
 
 /*SECTION 3*/
-.section-3{
-    @apply my-7
+.section-3 {
+  @apply my-7 px-20;
 }
 
-.download-heading{
-    @apply w-1/3 mx-auto text-center text-3xl font-bold
+.download-heading {
+  @apply w-1/3 mx-auto text-center text-3xl font-bold;
 }
 
-.download-p{
-    @apply w-1/2 mx-auto text-center text-slate-600 mt-3
+.download-p {
+  @apply w-1/2 mx-auto text-center text-slate-600 mt-3;
 }
 
-.download-cards-grp{
-    @apply w-9/12 mx-auto my-10 flex justify-between
+.download-cards-grp {
+  @apply w-9/12 mx-auto my-10 flex justify-between;
 }
 
-.download-card{
-    @apply py-5 px-4 rounded-lg shadow-xl  h-72
+.download-card {
+  @apply py-5 px-4 rounded-lg shadow-xl  h-72;
 }
 
-.firefox{
-    @apply mt-10
+.firefox {
+  @apply mt-10;
 }
 
-.opera{
-    @apply mt-20
+.opera {
+  @apply mt-20;
 }
 
-.download-logo{
-    @apply mx-auto
+.download-logo {
+  @apply mx-auto;
 }
 
-.download-card-heading{
-    @apply text-center text-lg font-bold my-3
+.download-card-heading {
+  @apply text-center text-lg font-bold my-3;
 }
 
-.download-card-text{
-    @apply text-center text-sm text-slate-500 mb-3
+.download-card-text {
+  @apply text-center text-sm text-slate-500 mb-3;
 }
 
-.lower-card{
-    @apply border-t border-dotted 
+.lower-card {
+  @apply border-t border-dotted;
 }
 
-.download-btn{
-    @apply text-white font-semibold mt-5 px-4 py-2 bg-blue-700 rounded-md hover:text-blue-700 hover:bg-white hover:outline hover:outline-blue-700 transition ease-in duration-100 hover:transform hover:scale-105
+.download-btn {
+  @apply text-white font-semibold mt-5 px-4 py-2 bg-blue-700 rounded-md hover:text-blue-700 hover:bg-white hover:outline hover:outline-blue-700 transition ease-in duration-100 hover:transform hover:scale-105;
 }
 
 /*SECTION 4*/
-.section-4{
-    @apply w-1/2 my-24 mx-auto 
+.section-4 {
+  @apply w-1/2 my-24 mx-auto;
 }
 
-.section-4-heading{
-    @apply text-2xl font-bold text-center mb-5
+.section-4-heading {
+  @apply text-2xl font-bold text-center mb-5;
 }
 
-.section-4-text{
-    @apply w-9/12 mx-auto mb-5 text-center text-slate-600
+.section-4-text {
+  @apply w-9/12 mx-auto mb-5 text-center text-slate-600;
 }
 
-.faq-grp{
-    @apply mt-20
+.faq-grp {
+  @apply mt-20;
 }
 
-.accordion{
-    @apply px-3 
+.accordion {
+  @apply px-3;
 }
 
-.question-heading{
-    @apply hover:text-orange-600 transition ease-in duration-100
+.question-heading {
+  @apply hover:text-orange-600 transition ease-in duration-100;
 }
 
-.question-heading-1{
-    @apply flex justify-between font-semibold text-lg border-b border-black cursor-pointer 
+.question-heading-1 {
+  @apply flex justify-between font-semibold text-lg border-b border-black cursor-pointer;
 }
 
-.question-heading-2{
-    @apply flex justify-between font-semibold text-lg border-b border-black cursor-pointer
+.question-heading-2 {
+  @apply flex justify-between font-semibold text-lg border-b border-black cursor-pointer;
 }
 
-.question-heading-3{
-    @apply flex justify-between font-semibold text-lg border-b border-black cursor-pointer
+.question-heading-3 {
+  @apply flex justify-between font-semibold text-lg border-b border-black cursor-pointer;
 }
 
-.question-heading-4{
-    @apply flex justify-between font-semibold text-lg border-b border-black cursor-pointer
+.question-heading-4 {
+  @apply flex justify-between font-semibold text-lg border-b border-black cursor-pointer;
 }
 
-.question{
-    @apply py-4 
+.question {
+  @apply py-4;
 }
 
-.arrow{
-    @apply h-3 my-auto
+.arrow {
+  @apply h-3 my-auto;
 }
 
-.faq-answer-1{
-    @apply mt-5
+.faq-answer-1 {
+  @apply mt-5;
 }
 
-.faq-answer-2{
-    @apply mt-5 
+.faq-answer-2 {
+  @apply mt-5;
 }
 
-.faq-answer-3{
-    @apply mt-5 
+.faq-answer-3 {
+  @apply mt-5;
 }
 
-.faq-answer-4{
-    @apply mt-5 
+.faq-answer-4 {
+  @apply mt-5;
 }
 
-.more-info{
-    @apply bg-blue-700 rounded-md text-white px-4 py-2 block mx-auto my-7
+.more-info {
+  @apply bg-blue-700 rounded-md text-white px-4 py-2 block mx-auto my-7;
 }
 
 /*FOOTER*/
-.upper-footer{
-    @apply bg-indigo-600 p-5
+.upper-footer {
+  @apply bg-indigo-600 px-5 py-10;
 }
 
-.number-joined{
-    @apply text-center text-white text-xs tracking-widest
+.number-joined {
+  @apply text-center text-white text-xs tracking-widest;
 }
 
-.footer-main-text{
-    @apply w-72 mx-auto mt-5 text-white text-center text-2xl font-semibold
+.footer-main-text {
+  @apply w-72 mx-auto mt-5 text-white text-center text-2xl font-semibold;
 }
 
-.email-component{
-    @apply w-1/3 mx-auto
+.email-component {
+  @apply w-1/3 mx-auto;
 }
 
-.footer-email{
-    @apply flex gap-3 w-full mt-10 
+.footer-email {
+  @apply flex gap-3 w-full mt-10;
 }
 
-.input-email{
-    @apply rounded-md w-64 h-auto p-2
+.input-email {
+  @apply rounded-md w-64 h-auto p-2 outline-0;
 }
 
-.email-error{
-    @apply w-64 text-white text-sm bg-red-700 mt-1 px-2 py-1 rounded-md 
+.email-error {
+  @apply w-64 text-white text-sm bg-red-700 mt-1 px-2 py-1 rounded-md;
 }
 
-.btn-contact-us{
-    @apply px-3 py-2 text-white text-sm bg-orange-600 rounded-md hover:text-orange-600 hover:bg-white hover:outline hover:outline-orange-600 transition ease-out duration-200
+.btn-contact-us {
+  @apply px-3 py-2 text-white text-sm font-semibold bg-orange-600 rounded-md hover:text-orange-600 hover:bg-white hover:outline hover:outline-orange-600 transition ease-out duration-200;
 }
 
-.footer-links{
-    @apply flex justify-between bg-slate-900 p-4
+.footer-links {
+  @apply flex justify-between bg-slate-900 p-4;
 }
 
-.first-group{
-    @apply flex
+.first-group {
+  @apply flex;
 }
 
-.footer-logo{
-    @apply mr-10 
+.footer-logo {
+  @apply mr-10;
 }
 
-.footer-link{
-    @apply mx-4 mt-1 text-white text-sm hover:text-orange-400 transition ease-out duration-200
+.footer-link {
+  @apply mx-4 mt-1 text-white text-sm hover:text-orange-400 transition ease-out duration-200;
 }
 
-.second-group{
-    @apply flex
+.second-group {
+  @apply flex;
 }
 
-.second-group-icon{
-    @apply mx-2 cursor-pointer 
+.second-group-icon {
+  @apply mx-2 cursor-pointer;
 }

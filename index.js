@@ -23,7 +23,7 @@ const emailInput = document.querySelector(".input-email");
 const emailBtn = document.querySelector(".btn-contact-us");
 const errorMessage = document.querySelector(".email-error");
 
-console.log(errorMessage);
+console.log(emailInput);
 
 //CODE
 //VIEWING HIDDEN FAQs
@@ -45,7 +45,7 @@ question4.addEventListener("click", function () {
 emailBtn.addEventListener("click", function () {
   if (emailInput.value.includes("@") && emailInput.value.includes(".com")) {
     console.log("success");
-    emailInput.textContent = "";
+    emailInput.value = "";
     errorMessage.classList.add("hidden");
   } else {
     errorMessage.classList.remove("hidden");

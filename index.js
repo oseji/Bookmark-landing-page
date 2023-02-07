@@ -1,5 +1,9 @@
 "use strict";
 
+//NAVBAR
+const hamburger = document.querySelector(".hamburger");
+const navList = document.querySelector(".nav-list");
+
 //HIDDEN FAQ ANSWERS
 const faq1 = document.querySelector(".faq-answer-1");
 const faq2 = document.querySelector(".faq-answer-2");
@@ -23,9 +27,15 @@ const emailInput = document.querySelector(".input-email");
 const emailBtn = document.querySelector(".btn-contact-us");
 const errorMessage = document.querySelector(".email-error");
 
-console.log(emailInput);
+console.log(navList.classList);
 
 //CODE
+//MOBILE NAVIGATION MENU
+hamburger.addEventListener("click", function () {
+  console.log("clicked");
+  navList.classList.toggle("hidden");
+});
+
 //VIEWING HIDDEN FAQs
 question1.addEventListener("click", function () {
   faq1.classList.toggle("hidden");

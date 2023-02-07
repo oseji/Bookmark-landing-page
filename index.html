@@ -5,26 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/output.css" />
-    <link rel="icon" href="images/logo-bookmark.svg" />
+    <link rel="icon" href="images/logo-example.jpg" />
     <title>Bookmark Landing Page</title>
   </head>
   <body>
     <!--NAVBAR-->
     <nav class="navbar">
-      <div>
+      <div class="flex justify-between">
         <img
           src="images/logo-bookmark.svg"
           alt="Bookmark logo"
           class="nav-logo"
         />
+        <img src="images/icon-hamburger.svg" class="hamburger" />
       </div>
 
       <div class="nav-list-section">
-        <ul class="nav-list">
-          <li class="nav-link">Features</li>
+        <ul class="nav-list hidden flex flex-col lg:flex-row gap-4 lg:gap-0">
+          <li class="nav-link border-t lg:border-t-0">Features</li>
           <li class="nav-link">Pricing</li>
           <li class="nav-link">Contact</li>
           <button class="nav-btn">LOGIN</button>
+          <div class="flex justify-center gap-4 lg:justify-end mt-72">
+            <img
+              src="images/icon-facebook.svg"
+              alt="facebook"
+              class="second-group-icon"
+            />
+            <img
+              src="images/icon-twitter.svg"
+              alt="twitter logo"
+              class="second-group-icon"
+            />
+          </div>
         </ul>
       </div>
     </nav>
@@ -269,9 +282,9 @@
         <div class="email-component">
           <div class="footer-email">
             <input type="email" class="input-email" />
-            <button class="btn-contact-us">Contact Us</button>
+            <p class="email-error hidden">Whoops, make sure it's an email</p>
           </div>
-          <p class="email-error hidden">Whoops, make sure it's an email</p>
+          <button class="btn-contact-us">Contact Us</button>
         </div>
       </div>
 

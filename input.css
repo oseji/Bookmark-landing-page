@@ -19,7 +19,7 @@
 }
 
 .nav-list-section {
-  @apply -z-10 lg:z-auto lg:pr-10 mt-5 lg:mt-0 h-full lg:h-auto;
+  @apply -z-10 lg:z-auto lg:pr-10 mt-5 lg:mt-0 h-screen lg:h-auto;
 }
 
 .nav-list {

@@ -4,6 +4,8 @@
 const hamburger = document.querySelector(".hamburger");
 const navList = document.querySelector(".nav-list-section");
 
+const container = document.querySelector(".container");
+
 //HIDDEN FAQ ANSWERS
 const faq1 = document.querySelector(".faq-answer-1");
 const faq2 = document.querySelector(".faq-answer-2");
@@ -31,12 +33,14 @@ console.log(navList.classList);
 
 //CODE
 //MOBILE NAVIGATION MENU
-hamburger.addEventListener("click", function (e) {
+hamburger.addEventListener("click", function () {
   console.log("clicked");
-  // navList.classList.toggle("hidden");
-  //e.preventDefault();
+
   navList.classList.toggle("hidden");
   navList.style.zIndex = "1";
+
+  container.classList.toggle("hidden");
+  console.log(container.classList);
 });
 
 //VIEWING HIDDEN FAQs

@@ -15,18 +15,20 @@
         <img
           src="images/logo-bookmark.svg"
           alt="Bookmark logo"
-          class="nav-logo"
+          class="nav-logo fill-white"
         />
         <img src="images/icon-hamburger.svg" class="hamburger" />
       </div>
 
-      <div class="nav-list-section">
-        <ul class="nav-list hidden flex flex-col lg:flex-row gap-4 lg:gap-0">
-          <li class="nav-link border-t lg:border-t-0">Features</li>
+      <div
+        class="nav-list-section hidden lg:flex flex-col lg:flex-row gap-4 lg:gap-0 transition ease-in duration-700"
+      >
+        <ul class="nav-list">
+          <li class="nav-link">Features</li>
           <li class="nav-link">Pricing</li>
           <li class="nav-link">Contact</li>
           <button class="nav-btn">LOGIN</button>
-          <div class="flex justify-center gap-4 lg:justify-end mt-72">
+          <div class="nav-list-logo">
             <img
               src="images/icon-facebook.svg"
               alt="facebook"

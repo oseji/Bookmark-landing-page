@@ -7,31 +7,35 @@
 }*/
 
 .navbar {
-  @apply bg-yellow-300   flex flex-col lg:flex-row justify-between py-4 px-5 lg:px-20;
+  @apply bg-white   flex flex-col gap-5 lg:gap-0 lg:flex-row justify-between py-4 px-5 lg:px-20;
 }
 
 .nav-logo {
-  @apply py-2;
+  @apply w-32 py-2;
 }
 
 .hamburger {
-  @apply h-5 my-auto;
+  @apply h-5 my-auto lg:hidden;
 }
 
 .nav-list-section {
-  @apply lg:pr-10 mt-5 lg:mt-0;
+  @apply -z-10 lg:z-auto lg:pr-10 mt-5 lg:mt-0 h-full lg:h-auto;
 }
 
 .nav-list {
-  @apply h-screen lg:h-auto;
+  @apply flex flex-col lg:flex-row;
 }
 
 .nav-link {
-  @apply border-b border-slate-500 lg:border-b-0 tracking-widest lg:tracking-normal font-semibold lg:font-normal uppercase text-center text-lg lg:text-sm  mx-4 py-2 hover:text-orange-400 cursor-pointer transition ease-out duration-200;
+  @apply text-slate-800 lg:text-black  tracking-widest lg:tracking-normal font-semibold lg:font-normal uppercase text-center text-lg lg:text-sm  mx-4 py-5 lg:py-2 hover:text-orange-400 cursor-pointer transition ease-out duration-200;
 }
 
 .nav-btn {
-  @apply text-lg lg:text-sm font-semibold ml-4 px-5 py-3 lg:py-2 text-white bg-red-600 rounded-md cursor-pointer hover:text-red-600 hover:bg-white hover:outline hover:outline-red-600 transition ease-in duration-100;
+  @apply w-11/12 lg:w-auto text-lg lg:text-sm font-semibold block mx-auto mt-7 lg:mt-0 lg:ml-4 px-5 py-3 lg:py-2 text-white lg:bg-red-600 bg-blue-600 outline outline-white rounded-md cursor-pointer hover:text-red-600 hover:bg-white hover:outline hover:outline-red-600 transition ease-in duration-100;
+}
+
+.nav-list-logo {
+  @apply flex justify-center gap-4 lg:justify-end mt-64 pb-5 lg:hidden;
 }
 
 /*SECTION 1*/
@@ -97,11 +101,11 @@
 }
 
 .feature-tabs {
-  @apply flex px-10 lg:px-40;
+  @apply flex px-10 lg:px-40 gap-5 overflow-x-scroll;
 }
 
 .feature {
-  @apply flex flex-col lg:flex-row gap-5 lg:gap-20 w-full mx-auto;
+  @apply flex flex-col lg:flex-row gap-5 lg:gap-20   p-4;
 }
 
 .more-info-other {

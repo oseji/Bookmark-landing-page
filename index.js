@@ -2,7 +2,7 @@
 
 //NAVBAR
 const hamburger = document.querySelector(".hamburger");
-const navList = document.querySelector(".nav-list");
+const navList = document.querySelector(".nav-list-section");
 
 //HIDDEN FAQ ANSWERS
 const faq1 = document.querySelector(".faq-answer-1");
@@ -31,9 +31,12 @@ console.log(navList.classList);
 
 //CODE
 //MOBILE NAVIGATION MENU
-hamburger.addEventListener("click", function () {
+hamburger.addEventListener("click", function (e) {
   console.log("clicked");
+  // navList.classList.toggle("hidden");
+  //e.preventDefault();
   navList.classList.toggle("hidden");
+  navList.style.zIndex = "1";
 });
 
 //VIEWING HIDDEN FAQs
